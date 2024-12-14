@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .row {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 25px;
+    gap: 20px;
+  }
+  
+  .text {
+    padding-right: 20px;
+    margin-top: 10px;
+    color: #2c7bfe;
+    text-shadow:  0 0 20px rgba(0, 0, 0, 0.26);
+  }
+  
+  .headbar {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50rem;
+    width: 300px;
+    gap: 5px;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  
+  .input i {
+    color: #868686;
+  }
+  
+  .search {
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Jarak antar card */
+      justify-content: space-between; /* Biarkan card merapat ke kiri */
+    }
+  
+  .card1 {
+    width: 100%; 
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 4.5%;
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+    min-height: 200px; /* Pastikan card memiliki tinggi minimum */
+    flex: 1; 
+  }
+  
+  .card1.hidden {
+    visibility: hidden; /* Sembunyikan card, namun layout tetap stabil */
+  }
+
+  
+  /* Tabel di dalam kartu */
+  .card1 table {
+    position: relative;
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    padding: 10px;
+  }
+  
+  /* Atur setiap baris tabel */
+  .card1 tr {
+    display: table-row;
+  }
+  
+  .card1 td {
+    display: table-cell;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #575a7b;
+    font-weight: 500;
+  }
+  
+.card1 td:last-child {
+    padding-left: 0;
+}
+
+  .card1 td.icon {
+    color: #868686;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  
+  .card1 td.time {
+    text-align: end;
+    padding-right: 10px;
+    color: #a7a6a6;
+    font-style: italic;
+  }
+  
+  #status {
+    color: #f50000;
+  }
+  
+  #status1 {
+    color: #27aa06;
+  }
+  
+  #status.on-process ion-icon {
+    color: rgb(0, 81, 255);
+  }
+  
+  .inner-box {
+    margin-top: 5px; 
+    padding: 20px; 
+    background-color: #f9f9f900; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    color: #575a7b; 
+    box-shadow: 0 -10px 35px -10px rgba(0, 0, 0, 0.12); 
+    text-align: justify; 
+  }
+  
+  .bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .button {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2c7bfe;
+    border-radius: 6px;
+  }
+  
+  .button:hover{
+    background-color: #2c7bfe;
+    color: #ffffff;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.404);
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  
+  
